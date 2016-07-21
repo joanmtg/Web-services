@@ -149,7 +149,7 @@ def borrarVM(nombre):
 
 
 # Metodo axiliar que, dado un nombre, retorna 1 si el usuario tiene una maquina virtual
-# con dicho nombre o 0 en caso de que no. Este metodo es util para realizar
+# con dicho nombre o 0 en el caso contrario. Este metodo es util para realizar
 # validaciones antes de llevar a cabo un procedimiento que requiera
 # la existencia de una maquina virtual con un nombre especifico
 
