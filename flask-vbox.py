@@ -125,9 +125,7 @@ def crearVM():
 
 	return jsonify({'result': True})
 
-	#return "Maquina virtual creada correctamente: \nNombre: %s \nRAM: %s MB \nNucleos: %s\n"%(nombre, RAM , nucleos)
-
-
+	
 # Este metodo se encarga de eliminar una maquina virtual del usuario en especifico
 # al ejecutar el comando:
 # curl -X DELETE http://localhost:5000/vms/<nombre-Maquina>
@@ -144,8 +142,6 @@ def borrarVM(nombre):
         subprocess.check_output(comando, shell = True)
 
 	return jsonify({'result': True})
-
-        #return "La maquina con nombre '%s' ha sido aniquilada\n"%(nombre)
 
 
 # Metodo axiliar que, dado un nombre, retorna 1 si el usuario tiene una maquina virtual
